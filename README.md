@@ -1,3 +1,31 @@
+# Project Description
+* Appli provides users a smart and interactive way to search for and track their job application.
+* Users can also use the app to seek advice from others and join networking events to expand their networks
+# Personal contribution
+* I created the forum page in the website which includes files as follow:
+    * Forum Page folder:
+        * Forum-Add
+        * Forum-List
+        * Forum-Reply
+        * Forum-Details
+        * Forum-Edit
+        * Forum-Delete
+    * Routes folder:
+        * routes_forum.js
+    * Models folder:
+        * forum.model.js
+# Test account:
+E-mail: admin@gmail.com password: passadmin
+
+#Future improvement:
+  * Pagination
+  * Search functionality
+  * Authentication and validation
+
+#ProjectURL:
+https://appli-demoapp.herokuapp.com/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
