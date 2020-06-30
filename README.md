@@ -1,6 +1,14 @@
 # Project Description
 * Appli provides users a smart and interactive way to search for and track their job application.
 * Users can also use the app to seek advice from others and join networking events to expand their networks
+# Team member:
+* This project is created by:
+   * Chris Jones
+   * Christopher Maeda
+   * Susan Boratynska
+   * Oswaldo Brun
+   * Sam Bebenek
+   * Paul Tran (me)
 # Personal contribution
 * I created the forum page in the website which includes files as follow:
     * Forum Page folder:
