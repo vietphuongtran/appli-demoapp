@@ -15,14 +15,14 @@
     * Models folder:
         * forum.model.js
 # Test account:
-E-mail: admin@gmail.com password: passadmin
+* E-mail: admin@gmail.com password: passadmin
 
-#Future improvement:
+# Future improvement:
   * Pagination
   * Search functionality
   * Authentication and validation
 
-#ProjectURL:
+# ProjectURL:
 https://appli-demoapp.herokuapp.com/
 
 
