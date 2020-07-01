@@ -9,7 +9,6 @@ export default class AboutComponent extends Component {
                 <h1>About Page</h1>
                 <div>
                     <p>
-                        Lorem ipsum.
                         Here’s an easy way for you to keep track of where you’ve applied, networking events, and contacts you’ve made along the way.
                         Think of it as your central hub, or your little black book to keep track of the connections you’ve made over the years. <br/>
                     </p>
