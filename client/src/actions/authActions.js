@@ -10,7 +10,7 @@ import {
 // Register User
 export const registerUser = (userData, history) => dispatch => {
   axios
-    .post('http://localhost:4000/appli-job-app-tracker/user/add', userData)
+    .post('/appli-job-app-tracker/user/add', userData)
     .then(res => history.push("/appli-job-app-tracker/user/login")) // re-direct to login on successful register
     .catch(err =>
       dispatch({
@@ -23,7 +23,7 @@ export const registerUser = (userData, history) => dispatch => {
 // Login - get user token
 export const loginUser = userData => dispatch => {
   axios
-    .post('http://localhost:4000/appli-job-app-tracker/user/login', userData)
+    .post('/appli-job-app-tracker/user/login', userData)
     .then(res => {
       // Save to localStorage
       // Set token to localStorage
