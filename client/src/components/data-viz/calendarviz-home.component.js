@@ -18,7 +18,7 @@ export default class CalendarVizHomeComponent extends React.Component {
 
 
     componentDidMount(){
-        axios.get('http://localhost:4000/appli-job-app-tracker/calendarviz')
+        axios.get('/appli-job-app-tracker/calendarviz')
             .then(response => {
                 this.setState({datum: response.data})
             })
@@ -29,7 +29,7 @@ export default class CalendarVizHomeComponent extends React.Component {
 
     calendarClick(pointer, event) {
         console.log(pointer);
-        axios.get(`http://localhost:4000/appli-job-app-tracker/calendarviz/getByDate/${pointer.data.day}`)
+        axios.get(`/appli-job-app-tracker/calendarviz/getByDate/${pointer.data.day}`)
             .then(response => {
                 console.log(response);
                 this.setState({breakdown: response.data});
