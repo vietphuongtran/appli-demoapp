@@ -24,7 +24,7 @@ class Login extends Component {
         if (nextProps.auth.isAuthenticated) {
             localStorage.setItem("userId", nextProps.auth.user.id);
             this.props.changeMenu();
-          this.props.history.push("/data-viz"); // push user to list when they login
+          this.props.history.push("/forum-home"); // push user to list when they login
         }if (nextProps.errors) {
           this.setState({
             errors: nextProps.errors
@@ -35,7 +35,7 @@ class Login extends Component {
     componentDidMount() {
         // If logged in and user navigates to Login page, should redirect them to dashboard
         if (this.props.auth.isAuthenticated) {
-          this.props.history.push("/data-viz");
+          this.props.history.push("/forum-home");
         }
       }  
 
