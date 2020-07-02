@@ -30,8 +30,8 @@ class CalendarDay extends Component {
       //console.log(dateTime);
       //Make multiple request for the Job Applications and Networking
       Promise.all([
-        axios.get('http://localhost:4000/appli-job-app-tracker/jobapps?date=' + dateTime),
-        axios.get('http://localhost:4000/appli-job-app-tracker/networking?date=' + dateTime)
+        axios.get('/appli-job-app-tracker/jobapps?date=' + dateTime),
+        axios.get('/appli-job-app-tracker/networking?date=' + dateTime)
       ]).then(([response1, response2]) => {
         var events = [];
         //Loop through all the data in the Job Applications
@@ -76,8 +76,8 @@ class CalendarDay extends Component {
       //console.log(dateTime);
       //Make multiple request for the Job Applications and Networking
       Promise.all([
-        axios.get('http://localhost:4000/appli-job-app-tracker/jobapps?date=' + dateTime),
-        axios.get('http://localhost:4000/appli-job-app-tracker/networking?date=' + dateTime)
+        axios.get('/appli-job-app-tracker/jobapps?date=' + dateTime),
+        axios.get('/appli-job-app-tracker/networking?date=' + dateTime)
       ]).then(([response1, response2]) => {
         var events = [];
         //Loop through all the data in the Job Applications
