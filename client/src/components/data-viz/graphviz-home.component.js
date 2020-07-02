@@ -19,7 +19,7 @@ export default class GraphVizHomeComponent extends React.Component {
         console.log(pointer);
         if(!this.state.dayView) {
 
-            axios.get(`http://localhost:4000/appli-job-app-tracker/graphviz/getDaysByMonth/${pointer.data.x}`)
+            axios.get(`/appli-job-app-tracker/graphviz/getDaysByMonth/${pointer.data.x}`)
                 .then(response => {
                     console.log(response);
                     this.setState({datum: [{"id": "Job Applications", "color": "#00FFFF", "data": response.data}], dayView: true});
@@ -28,7 +28,7 @@ export default class GraphVizHomeComponent extends React.Component {
                     console.log(error);
                 })
         } else {
-            axios.get('http://localhost:4000/appli-job-app-tracker/graphviz')
+            axios.get('/appli-job-app-tracker/graphviz')
                 .then(response => {
                     this.setState({datum: [{"id": "Job Applications", "color": "#00FFFF", "data": response.data}], dayView: false});
                 })
@@ -42,7 +42,7 @@ export default class GraphVizHomeComponent extends React.Component {
 
 
     componentWillMount(){
-        axios.get('http://localhost:4000/appli-job-app-tracker/graphviz')
+        axios.get('/appli-job-app-tracker/graphviz')
             .then(response => {
                 this.setState({datum: [{"id": "Job Applications", "color": "#00FFFF", "data": response.data}]});
             })
