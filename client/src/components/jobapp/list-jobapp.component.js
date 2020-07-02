@@ -86,7 +86,7 @@ export default class ListJobAppComponent extends Component {
             this.setState({page: page});
         }
         else {
-            axios.get(`http://localhost:4000/appli-job-app-tracker/jobapps/page/${page}`)
+            axios.get(`/appli-job-app-tracker/jobapps/page/${page}`)
                 .then(response => {
                     this.setState({jobapp: response.data});
                     this.setState({page: page});
@@ -102,7 +102,7 @@ export default class ListJobAppComponent extends Component {
     // back a list of jobapp items to set the state property accordingly
     componentDidMount(){
 
-        axios.get(`http://localhost:4000/appli-job-app-tracker/jobapps/page/${this.state.page}`)
+        axios.get(`/appli-job-app-tracker/jobapps/page/${this.state.page}`)
             .then(response => {
                 this.setState({jobapp: response.data});
             })
@@ -110,7 +110,7 @@ export default class ListJobAppComponent extends Component {
                 console.log(error);
             })
         if(this.state.fullJobList.length === 0) {
-            axios.get(`http://localhost:4000/appli-job-app-tracker/jobapps`)
+            axios.get(`/appli-job-app-tracker/jobapps`)
                 .then(response => {
                     this.setState({fullJobList: response.data});
                 })
