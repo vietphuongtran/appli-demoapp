@@ -20,7 +20,7 @@ export default class PaginationComponent extends Component {
 
 
     componentDidMount(){
-        axios.get(`http://localhost:4000/appli-job-app-tracker/jobapps/count`)
+        axios.get(`/appli-job-app-tracker/jobapps/count`)
             .then(response => {
                 let [{value}] = response.data
 
