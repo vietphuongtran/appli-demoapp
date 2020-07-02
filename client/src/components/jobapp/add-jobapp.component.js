@@ -381,7 +381,7 @@ export default class AddJobAppComponent extends Component {
         }
 
         // Endpoint accepting incoming requests:
-        axios.post('http://localhost:4000/appli-job-app-tracker/jobapps/add', newJobApp)
+        axios.post('/appli-job-app-tracker/jobapps/add', newJobApp)
             .then(res => console.log(res.data));
 
 
