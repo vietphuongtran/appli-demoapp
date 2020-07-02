@@ -54,7 +54,7 @@ export default class ShowJobAppComponent extends Component {
 	// component is mounted so we can request the data
 	componentDidMount() {
 
-		axios.get('http://localhost:4000/appli-job-app-tracker/jobapps/id/' + this.props.match.params.id)
+		axios.get('/appli-job-app-tracker/jobapps/id/' + this.props.match.params.id)
 			.then(response => {
 				this.setState({
 					_id: response.data._id,
@@ -86,7 +86,7 @@ export default class ShowJobAppComponent extends Component {
 
 	// Delete function:
 	delete(){
-		axios.get('http://localhost:4000/appli-job-app-tracker/jobapps/delete/' + this.props.match.params.id)
+		axios.get('/appli-job-app-tracker/jobapps/delete/' + this.props.match.params.id)
 			.then(console.log('Deleted'))
 			.catch(err => console.log(err));
 		this.props.history.push('/jobapp/1');
