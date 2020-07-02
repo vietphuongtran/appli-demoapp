@@ -72,7 +72,7 @@ export default class UpdateJobAppComponent extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:4000/appli-job-app-tracker/jobapps/id/' + this.props.match.params.id)
+        axios.get('/appli-job-app-tracker/jobapps/id/' + this.props.match.params.id)
             .then(response => {
                 this.setState({
                     jobapp_title: response.data.jobapp_title,
@@ -382,7 +382,7 @@ export default class UpdateJobAppComponent extends Component {
             jobapp_status: this.state.jobapp_status
         };
         console.log(obj);
-        axios.post('http://localhost:4000/appli-job-app-tracker/jobapps/update/' + this.props.match.params.id, obj)
+        axios.post('/appli-job-app-tracker/jobapps/update/' + this.props.match.params.id, obj)
             .then(res => console.log(res.data));
 
         // History is library from React Router, it keeps track of session history for React Router
